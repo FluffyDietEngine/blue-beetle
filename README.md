@@ -39,3 +39,4 @@ Will be adding more complicated test cases like finding element based on string,
 - Code reviews from Rustaceans are important whether my rust codes are valid enough for test cases.
 - More complicated test cases in DOM parsing.
 - Feel free to point out if I have missed any alternatives in Python only (No Xpath please!).
+- Any crates I should test from Rust?
