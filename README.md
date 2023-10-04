@@ -23,7 +23,7 @@ This repository is trying to find answers for these questions.
 
 # Tests
 
-Test case 1 - Finding all <a> tags in a given [html](https://en.wikipedia.org/wiki/Lists_of_books). 
+**Test case 1** - Finding all <a> tags in a given [html](https://en.wikipedia.org/wiki/Lists_of_books). 
 
 **Results**
 - [BeautifulSoup with html5lib](https://github.com/FluffyDietEngine/blue-beetle/blob/main/python-bs4/bs4_html5lib.py) -> 0.05966750695899827 s (~60 ms) 😞
