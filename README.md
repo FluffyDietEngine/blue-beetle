@@ -35,6 +35,13 @@ There is a significant difference between lxml and html5lib, as mentioned in the
 
 Will be adding more complicated test cases like finding element based on string, find a tag and modify the string inside, modify the DOM much more
 
+**Update on rust extension**
+
+- Written a rust extension for python with [selectrs](https://github.com/utkarshkukreti/select.rs) crate using pyo3 and maturin. 
+The results are not satisfying. Got 33s for 1000 iterations, which will be 33ms for one iteration. This is slower than [BeautifulSoup with html.parser](https://github.com/FluffyDietEngine/blue-beetle/blob/main/python-bs4/bs4_default.py). 
+- Need to check the same extension with other parsers in rust such as `tl` and  `scraper`. 
+
+
 # Where do I need help? 🤞
 - Code reviews from Rustaceans are important whether my rust codes are valid enough for test cases.
 - More complicated test cases in DOM parsing.

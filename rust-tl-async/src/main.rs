@@ -1,12 +1,13 @@
 extern crate reqwest;
 extern crate tl;
+use tokio;
 use std::time::Instant;
 
-fn main() {
+#[tokio::main]
+async fn main() {
     let url = "https://en.wikipedia.org/wiki/Lists_of_books";
-    let client = reqwest::blocking::Client::new();
-    let resp = client.get(url).send().unwrap();
-    let body = resp.text().unwrap();
+    let resp = reqwest::get(url).await.unwrap();
+    let body = resp.text().await.unwrap();
     let start = Instant::now();
     for _ in 0..1000 {
         let dom = tl::parse(&body, tl::ParserOptions::default()).unwrap();
